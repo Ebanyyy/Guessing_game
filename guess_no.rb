@@ -1,22 +1,17 @@
 x = rand(100)
-puts x
+#puts x
 
-chance = 1
-while chance <= 6 
-	answer = gets.chomp.to_i
-	puts answer
+answer = gets.chomp.to_i
+puts answer
 
-	if answer > x 
-		puts "Number is high"
-	elsif answer < x 
-		puts "Number is low"
-	else answer == x 
-		puts "Correct"
-		break
-	end
+loop do 
+	puts i
+	i = 6
 
-	puts "chances: #{chance}"
-	chance += 1
-	
-
+if answer > x 
+	puts "Number is high"
+elsif answer < x 
+	puts "Number is low"
+else answer = x 
+	puts "Correct"
 end
